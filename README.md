@@ -36,7 +36,7 @@ XRay 将在部署时会自动安装最新版。
 
 可以使用cloudflare的workers来`中转流量`，配置为：  
 
-addEventListener(  
+'addEventListener(  
     "fetch",event => {  
         let url=new URL(event.request.url);  
         url.hostname="xx.xxxx.xx";//你的heroku域名    
@@ -46,6 +46,7 @@ addEventListener(
         )  
     }  
 )  
+'
 
 
 ## 关于CF筛选IP
