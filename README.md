@@ -4,7 +4,7 @@
 
 用于在 Heroku 上部署 vless+websocket+tls，每次部署自动选择最新的 alpine linux 和 v2ray core 。  
 vless 性能更加优秀，占用资源更少。
-视频教程请参考工具大师的Heroku部署v2ray视频 https://www.youtube.com/watch?v=xEewUeWDNeI&t=649s
+视频教程请参考工具大师的[Heroku部署v2ray视频](https://www.youtube.com/watch?v=xEewUeWDNeI&t=649s)
 
 **Heroku 为我们提供了免费的容器服务，我们不应该滥用它，所以本项目不宜做为长期翻墙使用。**
 
@@ -36,7 +36,8 @@ XRay 将在部署时会自动安装最新版。
 
 可以使用cloudflare的workers来`中转流量`，配置为：  
 
-'addEventListener(  
+```
+addEventListener(  
     "fetch",event => {  
         let url=new URL(event.request.url);  
         url.hostname="xx.xxxx.xx";//你的heroku域名    
@@ -46,12 +47,12 @@ XRay 将在部署时会自动安装最新版。
         )  
     }  
 )  
-'
+```
 
 
 ## 关于CF筛选IP
 
-请参考 https://github.com/badafans/better-cloudflare-ip/tree/20201208
+请参考 [better-cloudflare-ip](https://github.com/badafans/better-cloudflare-ip/)
 ### 特别感谢 ：
 
 * [bclswl0827](https://github.com/bclswl0827/v2ray-heroku)
