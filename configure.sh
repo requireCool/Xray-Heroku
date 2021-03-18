@@ -22,6 +22,7 @@ cat << EOF > /usr/local/etc/xray/config.json
                     {
                         "id": "$UUID",
                         "level": 0
+                        "flow":"xtls-rprx-direct"
                     }
                 ],
                 "decryption": "none"
