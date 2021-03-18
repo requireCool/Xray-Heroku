@@ -21,16 +21,13 @@ cat << EOF > /usr/local/etc/xray/config.json
                 "clients": [
                     {
                         "id": "$UUID",
-                        "level": 0,
-                        "flow":"xtls-rprx-direct"
+                        "level": 0
                     }
                 ],
                 "decryption": "none"
             },
             "streamSettings": {
-                "network": "tcp",
-                "security": "xtls",
-                "xtlsSettings": {}
+                "network": "ws"
             }
         }
     ],
