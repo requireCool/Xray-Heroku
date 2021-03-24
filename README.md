@@ -1,14 +1,15 @@
 # XRay Heroku
+**Heroku 为我们提供了免费的容器服务，我们不应该滥用它，所以本项目不宜做为长期翻墙使用。**
 
 ## 概述
 
-用于在 Heroku 上部署 vless+websocket+tls，每次部署自动选择最新的 alpine linux 和 xray core 。  
-vless 性能更加优秀，占用资源更少。
-视频教程请参考工具大师的[Heroku部署v2ray视频](https://www.youtube.com/watch?v=xEewUeWDNeI&t=649s)
+用于在 Heroku 上部署 vless+websocket+tls，每次部署自动选择最新的 alpine linux 和 Xray-core  
 
-**Heroku 为我们提供了免费的容器服务，我们不应该滥用它，所以本项目不宜做为长期翻墙使用。**
+VLESS协议性能更加优秀，占用资源更少
 
-在这里感谢bclswl0827提供的v2ray教程。
+**Xray-core更新内容请参考[ProjectX](https://github.com/XTLS/Xray-core/)**
+
+视频教程请参考工具大师的[Heroku部署v2ray视频](https://www.youtube.com/watch?v=xEewUeWDNeI&t=649s)，在这里感谢bclswl0827提供的v2ray教程。
 
 ## 镜像
 
@@ -50,7 +51,7 @@ addEventListener(
 ```
 
 
-## 关于CF筛选IP
+## 关于CF优选IP
 
 请参考 [better-cloudflare-ip](https://github.com/badafans/better-cloudflare-ip/)
 ### 特别感谢 ：
